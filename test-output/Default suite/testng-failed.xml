@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.shine.tests.Test_WVMP">
+        <methods>
+          <include name="test_recruiter_view"/>
+          <include name="TestSetup"/>
+          <include name="quitbrowser"/>
+          <include name="setUp"/>
+          <include name="takeScreenshot"/>
+          <include name="test_pview_activity"/>
+        </methods>
+      </class> <!-- com.shine.tests.Test_WVMP -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name="Shine Candidate Suite" verbose="2" parallel="tests" thread-count="5"> -->
+
+<suite name="Shine Candidate Suite" verbose="3">
+	<parameter name="browserType" value="Chrome" />
+	<listeners>
+		<listener
+			class-name="com.shine.listener.TestNGCustomReportListener" />
+	</listeners>
+
+	<suite-files>
+		<suite-file path="./TestNG_Complete_Registration.xml"></suite-file>
+	</suite-files>
+
+	<suite-files>
+		<suite-file path="./TestNG_Loginflows.xml"></suite-file>
+	</suite-files>
+
+	<suite-files>
+		<suite-file path="./TestNG_Search.xml"></suite-file>
+	</suite-files>
+
+	<suite-files>
+		<suite-file path="./TestNG_Other.xml"></suite-file>
+	</suite-files>
+	
+	<test name="Check Bad Profile">
+		<classes>
+			<class name="com.shine.tests.Test_CheckBadProfile"></class>
+		</classes>
+	</test>
+
+<!-- 	<test name="Mail Check"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.shine.tests.Test_ShineEmail"></class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+	<test name="After Suite Process Cleaner">
+		<classes>
+			<class name="com.shine.common.utils.ProcessCleaner"></class>
+		</classes>
+	</test>
+
+</suite>

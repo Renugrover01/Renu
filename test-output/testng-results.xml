@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="28937" started-at="2020-06-26T11:09:09 IST" finished-at="2020-06-26T11:09:38 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="28937" started-at="2020-06-26T11:09:09 IST" finished-at="2020-06-26T11:09:38 IST">
+      <class name="com.shine.tests.utility.Test_Sitemaps">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.shine.tests.utility.Test_Sitemaps@79169472]" name="setUp" is-config="true" duration-ms="68" started-at="2020-06-26T11:09:09 IST" finished-at="2020-06-26T11:09:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TestSetup()[pri:0, instance:com.shine.tests.utility.Test_Sitemaps@79169472]" name="TestSetup" is-config="true" duration-ms="8550" started-at="2020-06-26T11:09:09 IST" finished-at="2020-06-26T11:09:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSetup -->
+        <test-method status="PASS" signature="getURL()[pri:1, instance:com.shine.tests.utility.Test_Sitemaps@79169472]" name="getURL" duration-ms="358" started-at="2020-06-26T11:09:18 IST" finished-at="2020-06-26T11:09:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method status="PASS" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.shine.tests.utility.Test_Sitemaps@79169472]" name="takeScreenshot" is-config="true" duration-ms="3" started-at="2020-06-26T11:09:18 IST" finished-at="2020-06-26T11:09:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getURL status=SUCCESS method=Test_Sitemaps.getURL()[pri:1, instance:com.shine.tests.utility.Test_Sitemaps@79169472] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method status="PASS" signature="create_html()[pri:2, instance:com.shine.tests.utility.Test_Sitemaps@79169472]" name="create_html" duration-ms="11" started-at="2020-06-26T11:09:18 IST" depends-on-methods="com.shine.tests.utility.Test_Sitemaps.getURL" finished-at="2020-06-26T11:09:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_html -->
+        <test-method status="PASS" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.shine.tests.utility.Test_Sitemaps@79169472]" name="takeScreenshot" is-config="true" duration-ms="1" started-at="2020-06-26T11:09:18 IST" finished-at="2020-06-26T11:09:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=create_html status=SUCCESS method=Test_Sitemaps.create_html()[pri:2, instance:com.shine.tests.utility.Test_Sitemaps@79169472] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method status="PASS" signature="send_email()[pri:3, instance:com.shine.tests.utility.Test_Sitemaps@79169472]" name="send_email" duration-ms="19740" started-at="2020-06-26T11:09:18 IST" depends-on-methods="com.shine.tests.utility.Test_Sitemaps.create_html" finished-at="2020-06-26T11:09:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- send_email -->
+        <test-method status="PASS" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.shine.tests.utility.Test_Sitemaps@79169472]" name="takeScreenshot" is-config="true" duration-ms="2" started-at="2020-06-26T11:09:38 IST" finished-at="2020-06-26T11:09:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=send_email status=SUCCESS method=Test_Sitemaps.send_email()[pri:3, instance:com.shine.tests.utility.Test_Sitemaps@79169472] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method status="PASS" signature="quitbrowser()[pri:0, instance:com.shine.tests.utility.Test_Sitemaps@79169472]" name="quitbrowser" is-config="true" duration-ms="217" started-at="2020-06-26T11:09:38 IST" finished-at="2020-06-26T11:09:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+      </class> <!-- com.shine.tests.utility.Test_Sitemaps -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

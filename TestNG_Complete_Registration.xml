@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SHINE Complete Registration" verbose="3">
+
+	<parameter name="browserType" value="Chrome" />
+	<listeners>
+		<listener class-name="com.shine.listener.TestNGCustomReportListener" />
+	</listeners>
+
+<!-- 	<suite-files>
+		<suite-file path="./TestNG_RegistrationFlow.xml"></suite-file>
+	</suite-files> -->
+	
+	<test name="Before Suite Process Cleaner">
+		<classes>
+			<class name="com.shine.common.utils.ProcessCleaner"></class>
+		</classes>
+	</test>
+	
+	<test name="SEM Registration">
+		<classes>
+			<class name="com.shine.tests.Test_RegistrationSem"></class>
+		</classes>
+	</test>
+
+	<test name="Freshers Flow">
+		<classes>
+			<class name="com.shine.tests.Test_FresherRegistration"></class>
+		</classes>
+	</test>
+	
+	<test name="Registration">
+		<classes>
+			<class name="com.shine.tests.Test_Registration"></class>
+		</classes>
+	</test>
+	
+	<test name="Midout Registration">
+		<classes>
+			<class name="com.shine.tests.Test_MidoutRegistration"></class>
+		</classes> 
+	</test>
+	
+	<test name="Complete Registration">
+		<classes>
+			<class name="com.shine.tests.Test_RegistrationComplete"></class>
+		</classes>
+	</test>
+	
+	<test name="Profile Cleaner - Mark Bad">
+		<classes>
+			<class name="com.shine.tests.Test_MarkProfileBad"></class>
+		</classes>
+	</test>
+	
+	<test name="After Suite Process Cleaner">
+		<classes>
+			<class name="com.shine.common.utils.ProcessCleaner"></class>
+		</classes>
+	</test>
+
+</suite>

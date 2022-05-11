@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- <suite name="Shine Search Web/API Test" parallel="tests" -->
+<!-- 	thread-count="6" verbose="2"> -->
+	
+<suite name="Shine Search Web/API Test" verbose="3">
+
+
+	<test name="Search">
+		<classes>
+			<class name="com.shine.tests.Test_Search"></class>
+		</classes>
+	</test>
+
+	<test name="Search Queries 1-20">
+		<parameter name="search" value="1" />
+		<classes>
+			<class name="com.shine.tests.Test_SearchResults"></class>
+		</classes>
+	</test>
+	<test name="Search Queries 20-40">
+		<parameter name="search" value="2" />
+		<classes>
+			<class name="com.shine.tests.Test_SearchResults"></class>
+		</classes>
+	</test>
+<!-- 	<test name="Search Queries 40-60">
+		<parameter name="search" value="3" />
+		<classes>
+			<class name="com.shine.tests.Test_SearchResults"></class>
+		</classes>
+	</test>
+	<test name="Search Queries 60-80">
+		<parameter name="search" value="4" />
+		<classes>
+			<class name="com.shine.tests.Test_SearchResults"></class>
+		</classes>
+	</test>
+	<test name="Search Queries 80-100">
+		<parameter name="search" value="5" />
+		<classes>
+			<class name="com.shine.tests.Test_SearchResults"></class>
+		</classes>
+	</test> -->
+</suite>

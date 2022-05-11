@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Shine Candidate Suite" verbose="3">
+	<parameter name="browserType" value="Chrome" />
+	<listeners>
+		<listener class-name="com.shine.listener.TestNGCustomReportListener" />
+	</listeners>
+
+	<test name="QUnit Javascript Test">
+		<classes>
+			<class name="com.shine.tests.utility.Test_QUnitJSTest"></class>
+		</classes>
+	</test>
+
+
+</suite>

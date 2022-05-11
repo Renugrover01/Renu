@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- <suite name="Shine miscellaneous Flows" parallel="tests" -->
+<!-- 	thread-count="3" verbose="3"> -->
+	
+<suite name="Shine miscellaneous Flows" verbose="3">
+
+	<test name="Login Validation">
+		<classes>
+			<class name="com.shine.tests.Test_Login"></class>
+		</classes>
+	</test>
+	<test name="verify Top employers and consultant url">
+		<classes>
+			<class name="com.shine.tests.Test_HomepageLinks"></class>
+		</classes>
+	</test>
+
+	<test name="verify jd duplicate data">
+		<classes>
+			<class name="com.shine.tests.Test_JD_CheckDuplicate"></class>
+		</classes>
+	</test>
+	
+	<test name="IVR Call">
+		<classes>
+			<class name="com.shine.tests.Test_IVRCall"></class>
+		</classes>
+	</test>
+
+	<test name="Test AMCAT User">
+		<classes>
+			<class name="com.shine.tests.Test_AMCAT"></class>
+		</classes>
+	</test>
+	
+
+</suite>

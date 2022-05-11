@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Shine Candidate Sitemaps" verbose="2">
+	<parameter name="browserType" value="Chrome" />
+	<test name="Verify Candidate Sitemaps">
+		<classes>
+			<class name="com.shine.tests.utility.Test_Sitemaps"></class>
+		</classes>
+	</test>
+
+</suite>
